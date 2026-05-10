@@ -1,5 +1,7 @@
 # College Learning Management Example Database
 
+> https://github.com/joey-qytyku/final-db
+
 ## Overview
 
 The database simulates the LMS of a college about the size of Ursinus. It would be used in real life by migrating the student and course information to newer iterations of the database every semester and creating the rest of the tables with newer information.
