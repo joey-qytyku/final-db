@@ -169,6 +169,7 @@ WITH assign_grades as (
 	inner join stu on stu.stID = gra.stID
 	inner join asi on gra.asID = asi.asID
 )
-select assign_grades.stID, (SUM(CAST(assign_grades.pts_obtained as DOUBLE PRECISION)) / SUM(assign_grades.pts_total) * 4) as gpa from assign_grades
-group by stID order by gpa desc;
+select assign_grades.stID, assign_grades.name, (SUM(CAST(assign_grades.pts_obtained as DOUBLE PRECISION)) / SUM(assign_grades.pts_total) * 4) as gpa from assign_grades
+group by stID, name order by gpa desc;
+
 ```
